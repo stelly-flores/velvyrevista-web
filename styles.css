@@ -106,6 +106,28 @@ section.volumenes {
     margin-bottom: 10px;
 }
 
+/* Media queries para responsividad */
+/* Para pantallas medianas (tablets en horizontal o pantallas pequeñas de escritorio) */
+@media (max-width: 1024px) {
+    .volumen {
+        width: calc(33.33% - 40px);
+    }
+}
+
+/* Para tablets (en vertical) */
+@media (max-width: 768px) {
+    .volumen {
+        width: calc(50% - 40px);
+    }
+}
+
+/* Para teléfonos móviles */
+@media (max-width: 480px) {
+    .volumen {
+        width: calc(100% - 40px);
+    }
+}
+
 .volumen p {
     color: #666;
     line-height: 1.6;
