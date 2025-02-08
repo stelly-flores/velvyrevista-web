@@ -1,0 +1,555 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* Fondo sutil con un degradado muy ligero y borde inferior */
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.Revistas {
+    /* Título con diseño minimalista: tipografía limpia y sobria */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #222;
+    margin: 0 0 20px;
+}
+
+.Descripción {
+    /* Texto descriptivo simple y centrado */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+h1, h2, h3 {
+    color: #222;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section.volumenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.volumenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.volumen {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(25% - 40px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.volumen:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.volumen h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.volumen p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.volumen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+}
+
+.volumen a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.volumen a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ddd;
+}
+
+#colabora {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#colabora h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+#colabora p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+#formulario-colaboracion {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#formulario-colaboracion input,
+#formulario-colaboracion textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#formulario-colaboracion button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formulario-colaboracion button:hover {
+    background-color: #555;
+}
+
+#info-revista {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#info-revista h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.info-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-contenido img {
+    max-width: 300px;
+    margin: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-contenido p {
+    max-width: 600px;
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* ===== Estilos adicionales para secciones específicas ===== */
+
+/* Estilos para la sección "Sobre el Proyecto" */
+#sobre-proyecto {
+  background-color: #ecf0f1;  /* Tonalidad clara y profesional */
+  padding: 30px;
+  border-left: 6px solid #2980b9;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+#sobre-proyecto h2 {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+#sobre-proyecto p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Estilos para la sección "Misión y Visión" */
+#mision-vision {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-left: 6px solid #27ae60;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+#mision-vision h2,
+#mision-vision h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+#mision-vision p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* ===== Estilos adicionales para otras secciones con iconos ===== */
+/* Nota: Para que los iconos se muestren correctamente, asegúrate de incluir Font Awesome en la sección <head> de tu HTML, por ejemplo:
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+*/
+
+/* Sección Modalidad de Colaboración */
+#colaboracion {
+    position: relative;
+    background-color: #eef9ff;
+    padding: 30px;
+    border-left: 6px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#colaboracion h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+#colaboracion h2::before {
+  content: "\f0c0"; /* Icono de usuarios (Font Awesome) */
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    margin-right: 10px;
+    color: #3498db;
+}
+
+/* Sección Beneficios de Participar */
+#beneficios {
+    position: relative;
+    background-color: #fdfdfd;
+    padding: 30px;
+    border-left: 6px solid #27ae60;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#beneficios h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+#beneficios h2::before {
+    
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #27ae60;
+}
+
+#beneficios ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#beneficios ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+#beneficios ul li::before {
+    
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #27ae60;
+    font-size: 1.2rem;
+}
+
+/* Sección Proceso de Colaboración */
+#proceso {
+    position: relative;
+    background-color: #fff7e6;
+    padding: 30px;
+    border-left: 6px solid #e67e22;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#proceso h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+#proceso h2::before {
+  content: "\f2f1"; /* Icono representativo del proceso (Font Awesome) */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #e67e22;
+}
+
+#proceso ol {
+    list-style: none;
+    counter-reset: paso;
+    padding-left: 0;
+}
+
+#proceso ol li {
+    counter-increment: paso;
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+#proceso ol li::before {
+    content: counter(paso);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #e67e22;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+/* Sección Contacto y Redes Sociales */
+#contacto {
+    position: relative;
+    background-color: #f1f1f1;
+    padding: 30px;
+    border-left: 6px solid #8e44ad;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#contacto h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+#contacto h2::before {
+    content: "\f095"; /* Icono de teléfono (Font Awesome) */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #8e44ad;
+}
+
+/* Iconos para Redes Sociales */
+#contacto ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#contacto ul li a {
+    font-size: 1.5rem;
+    color: #8e44ad;
+    transition: color 0.3s;
+}
+
+#contacto ul li a:hover {
+    color: #663399;
+}
+
+/*============================================*/
+/* Estilos minimalistas para secciones de info  */
+/*============================================*/
+
+/* Aplicamos un estilo unificado a todas las secciones de información */
+#sobre-proyecto,
+#mision-vision,
+#colaboracion,
+#beneficios,
+#proceso,
+#contacto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;  /* Bordes más redondeados para un look menos rectangular */
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  /* Sombra suave para dar profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transición para un efecto dinámico al pasar el cursor */
+}
+
+#sobre-proyecto:hover,
+#mision-vision:hover,
+#colaboracion:hover,
+#beneficios:hover,
+#proceso:hover,
+#contacto:hover {
+    transform: translateY(-5px);  /* Leve elevación al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);  /* Sombra más pronunciada al hover para resaltar la sección */
+}
+
+/* Encabezados de nivel 2: simplificamos la presentación y eliminamos iconos */
+#sobre-proyecto h2,
+#mision-vision h2,
+#colaboracion h2,
+#beneficios h2,
+#proceso h2,
+#contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Eliminamos los pseudo-elementos decorativos en los encabezados */
+#colaboracion h2::before,
+#beneficios h2::before,
+#proceso h2::before,
+#contacto h2::before {
+  content: "";
+  margin-right: 0;
+}
+
+/* Subtítulos en las secciones de Misión y Visión */
+#mision-vision h3,
+#sobre-proyecto h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+/* Estilos para los párrafos */
+#sobre-proyecto p,
+#mision-vision p,
+#colaboracion p,
+#beneficios p,
+#proceso p,
+#contacto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Ajuste para listas en "Beneficios" y "Contacto" */
+#beneficios ul,
+#contacto ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+#beneficios ul li,
+#contacto ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
